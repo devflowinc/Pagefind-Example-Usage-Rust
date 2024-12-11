@@ -111,4 +111,6 @@ pub async fn main() {
         println!("file {:?}", file.filename);
         println!("content {:?}", file.contents);
     }
+
+    write_files(&mut search_index, Some("static/pagefind".to_string())).await;
 }
